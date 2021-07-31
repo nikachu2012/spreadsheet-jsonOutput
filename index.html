@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GoogleSpreadsheet-jsonOutput</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1></h1>
+          <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">GoogleスプレッドシートをJSON形式で出力</a>
+              </div>
+          </nav>
+          <p>GoogleスプレッドシートをJSON形式で出力します。</p>
+          <a href="jyunbi.html">▶︎URLを入力する前の準備</a>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">GoogleスプレッドシートのURL</label>
+            <input type="text" class="form-control" id="sheetURL" placeholder="https://docs.google.com/spreadsheets/d/~~~~~~~~~~~">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">シート番号</label>  <p>シート番号はJSONを出したいシートを左から数えて何番目かを書いてください。</p>
+            <input type="text" class="form-control" id="sheetNumber" placeholder="1~*の半角数字を入力">
+          </div>
+          <button type="button" id="outputButton" class="btn btn-primary">出力</button>
+          <p id="URLOutput">ここに出力結果が表示されます。</p>
+          <br>
+          <hr>
+          <div>
+            <h6>Copyright &copy; Nikachu All rights reserved.</h6>
+          </div>
+          
+          </div>
+
+        </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
